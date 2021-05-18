@@ -1,0 +1,574 @@
+/* !TABLET */
+@media screen and (min-width: 768px) and (min-height: 510px) and (max-height: 565px) and (orientation: landscape) {
+    /* About section fix for specific dimension */
+    .about {
+        height: 100vh;
+    }
+    .manghan {
+        font-size: 1.4em;
+    }
+    .about h2 {
+        font-size: 1.2em;
+    }
+    h3 {
+        font-size: 1.1em;
+    }
+    .about p {
+        font-size: 1em;
+    }
+    .personal-pic {
+        height: 12em;
+        width: 12em;
+    }
+}
+
+/** About section styling */
+@media screen and (min-width: 1000px) and (min-height: 1000px) and (orientation: portrait) {
+    .about {
+        height: 100vh;
+    }
+    .manghan {
+        font-size: 2.3em;
+    }
+    .about h2 {
+        font-size: 2em;
+    }
+    h3 {
+        font-size: 1.8em;
+    }
+    .about p {
+        font-size: 1.5em;
+    }
+    .personal-pic {
+        height: 12em;
+        width: 12em;
+    }
+}
+
+    @media screen and (min-width: 775px) and (min-height: 1200px) {
+        .about {
+            height: 100vh;
+        }
+        .manghan {
+            font-size: 2.2em;
+        }
+        .about h2 {
+            font-size: 1.8em;
+        }
+        h3 {
+            font-size: 1.5em;
+        }
+        .about p {
+            font-size: 1.3em;
+        }
+    }
+
+    @media screen and (max-width: 525px) and (min-height: 768px) and (max-height: 800px) and (orientation: portrait) {
+        .about {
+            height: 100vh;
+        }
+        .about br {
+            display: none;
+        }
+        .location-info {
+            margin-top: 0 !important;
+        }
+        .about-grid {
+            padding: 0 1em !important;
+        }
+    }
+
+    @media screen and (max-width: 768px) and (min-height: 1000px) and (orientation: portrait) {
+        .manghan {
+            font-size: clamp(1.5em, 5vw, 4em);
+        }
+        .about h2 {
+            font-size: clamp(1.4em, 4vw, 3.5em);
+        }
+        h3 {
+            font-size: clamp(1.1em, 3.5vw, 3em);
+        }
+        .about p {
+            font-size: clamp(1em, 3vw, 2em);
+        }
+    }
+
+@media screen and (min-width: 400px) and (max-width: 450px) and (max-height: 650px) {
+    /* Buggy dimension */
+    .about {
+        height: auto !important;
+    }
+}
+
+/* !MOBILE */
+/* !Portrait */
+@media screen and (max-width: 450px) and (orientation: portrait) {
+    /* *About */
+    .logo {
+        height: 50px;
+        width: 50px;
+    }
+    .about {
+        height: 100vh;
+    }
+    .about br {
+        display: none;
+    }
+    .location-info {
+        margin-top: 0 !important;
+    }
+    .about-grid {
+        padding: 0 1em !important;
+    }
+    .cv img {
+        display: none;
+    }
+    .download-button {
+        width: 30vw;
+    }
+
+    /* *Projects */
+    .skill-box {
+        width: 20px;
+        height: 20px;
+        margin: 15px 35px 15px 15px;
+    }
+    .skill-box img {
+        width: 40px;
+        height: 40px;
+    }
+
+    /* *PhD */
+    .carousel,
+    .carousel-item img {
+        width: 275px;
+        height: 175px;
+    }
+    .audio-container {
+        margin: 0 2rem 3rem 2rem;
+    }
+    audio {
+        width: 100%;
+        height: 2rem;
+    }
+    iframe {
+        width: 100%;
+        height: 150px;
+    }
+
+    /* *Contact */
+    .contact button {
+        width: 50vw;
+    }
+
+    /* *Contact form */
+    .form-popup {
+        width: 90vw;
+        left: 5vw;
+    }
+
+    .submit, .cancel {
+        width: 35vw;
+        height: 2.5em;
+        font-size: 0.8em;
+    }
+
+    /*!Remove hover effects */
+    @media screen and (max-width: 900px) {
+        .overlay {
+            display: none;
+        }
+
+        .scroll-arrow:hover {
+            transform: none;
+        }
+    }
+}
+
+    @media screen and (max-width: 400px) {
+        /* About fix */
+        .about-left {
+            margin-top: 1em;
+        }
+        .manghan {
+            margin-top: 0;
+        }
+    }
+
+@media screen and (max-width: 350px) {
+    /* *About */
+    .personal-pic {
+        width: 11em;
+        height: 11em;
+    }
+    .about {
+        height: auto;
+    }
+    .download-button {
+        width: 40vw;
+    }
+
+    /* *Projects */
+    .skill-box {
+        width: 5px;
+        height: 5px;
+        margin: 5px 30px 10px 10px;
+    }
+    .skills-container {
+        margin-right: 15px;
+    }
+    .skill-box img {
+        width: 35px;
+        height: 35px;
+    }
+    .project-box,
+    .project-box img {
+        width: 225px;
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    /* Carousel fix */
+    .carousel,
+    .carousel-item img {
+        width: 200px;
+        height: 125px;
+    }
+}
+
+/* !Landscape */
+@media screen and (max-width: 820px) and (max-height: 425px) and (orientation: landscape) {
+    /* *PhD */
+    .audio-container {
+        grid-template-areas:
+            'leftA'
+            'leftB'
+            'rightA'
+            'rightB';
+        grid-template-columns: 100%;
+        gap: 0;
+    }
+    .audio-center-line {
+        display: none;
+    }
+    .player-left {
+        margin-bottom: 2em;
+    }
+    audio {
+        width: 80%;
+        height: 2rem;
+    }
+
+    /* *Contact form */
+    @keyframes moveContactForm {
+        from {
+            margin-top: -100vh;
+        }
+        to {
+            margin-top: -22;
+        }
+    }
+    .form-popup {
+        margin-top: -22vh;
+    }
+}
+
+    @media screen and (max-width: 850px) and (max-height: 425px) and (orientation: landscape) {
+        @keyframes moveContactForm {
+            from {
+                margin-top: -100vh;
+            }
+            to {
+                margin-top: -22;
+            }
+        }
+        .form-popup {
+            margin-top: -22vh;
+        }
+    }
+
+/* ! HANDHELD PROJECT MODAL STYLING */
+/** Turns modal PORTRAIT */
+@media screen and (max-width: 800px) and (orientation: portrait) {
+    .modal-content {
+        height: auto;
+        margin: 0 auto;
+    }
+    .close {
+        top: 0;
+    }
+    .lightbox-grid {
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+    }
+    .lightbox-grid div:nth-child(1),
+    .lightbox-grid div:nth-child(2),
+    .lightbox-grid video {
+        height: 250px;
+    }
+    .lightbox-grid div:nth-child(1) {
+        background-color: #fefefe;
+        border-radius: 15px 15px 0 0;
+    }
+    .lightbox-grid div:nth-child(2) {
+        border-top: 1px solid #000;
+        border-left: none;
+    }
+    .lightbox-grid video {
+        border-radius: 0 0 15px 15px;
+    }
+    .prev,
+    .next {
+        top: 27.5%;
+    }
+    .numbertext {
+        color: #fff;
+        font-size: 0.7em;
+        top: 0.5%;
+        left: 90%;
+    }
+    .lightbox-grid h3 {
+        padding: 5px 0 5px 60px;
+        font-size: 2em;
+        border-radius: 15px 15px 0 0;
+    }
+    .lightbox-grid p {
+        margin-left: 60px;
+        font-size: 1.3em;
+        padding-right: 45px;
+    }
+    .lightbox-grid p:nth-child(2) {
+        margin-left: 60px;
+        font-size: 1.5em;
+    }
+    .numbertext {
+        left: 85%;
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 625px) and (min-height: 575px) {
+    .numbertext {
+        /* Shifts numbertext */
+        left: 85%;
+    }
+}
+
+@media screen and (max-width: 375px) and (min-height: 775px) {
+    .close {
+        top: 10px;
+    }
+    .lightbox-grid div:nth-child(1),
+    .lightbox-grid div:nth-child(2),
+    .lightbox-grid video {
+        height: 300px;
+    }
+    .lightbox-grid h3 {
+        padding: 5px 0 5px 47px;
+        font-size: 1.7em;
+    }
+    .lightbox-grid p {
+        margin-left: 47px;
+        font-size: 1.2em;
+    }
+    .lightbox-grid p:nth-child(2) {
+        margin-left: 47px;
+        font-size: 1.4em;
+    }
+    .numbertext {
+        left: 80%;
+    }
+}
+
+@media screen and (max-width: 800px) and (min-height: 1000px) {
+    .lightbox-grid div:nth-child(1),
+    .lightbox-grid div:nth-child(2),
+    .lightbox-grid video {
+        height: 400px;
+    }
+    .lightbox-grid h3 {
+        padding: 5px 0 5px 47px;
+        font-size: 2em;
+    }
+    .lightbox-grid p {
+        margin-left: 47px;
+        font-size: 1.5em;
+    }
+    .lightbox-grid p:nth-child(2) {
+        margin-left: 47px;
+        font-size: 1.8em;
+    }
+    .numbertext {
+        left: 80%;
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 375px) and (max-height: 775px) {
+    .lightbox-grid h3 {
+        padding: 5px 0 5px 47px;
+        font-size: 1.5em;
+    }
+    .lightbox-grid p {
+        margin-left: 47px;
+        font-size: 1em;
+    }
+    .lightbox-grid p:nth-child(2) {
+        margin-left: 47px;
+        font-size: 1.1em;
+    }
+    .numbertext {
+        left: 80%;
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .lightbox-grid h3 {
+        padding: 5px 0 5px 45px;
+    }
+    .lightbox-grid p,
+    .lightbox-grid p:nth-child(2) {
+        margin-left: 45px;
+    }
+    .numbertext {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .lightbox-grid h3 {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 800px) and (max-height: 575px) and (orientation: portrait) {
+    .lightbox-grid div:nth-child(1),
+    .lightbox-grid div:nth-child(2),
+    .lightbox-grid video {
+        height: 200px;
+    }
+    .lightbox-grid br {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 415px) and (max-width: 540px) and (min-height: 320px) and (max-height: 525px) {
+    .lightbox-grid br {
+        display: none;
+    }
+    .lightbox-grid h3 {
+        padding: 5px 0 5px 45px;
+        font-size: 1.5em;
+    }
+    .lightbox-grid p,
+    .lightbox-grid p:nth-child(2) {
+        margin-left: 45px;
+        font-size: 1em;
+    }
+}
+
+/*! Handheld modal LANDSCAPE */
+@media screen and (max-height: 600px) and (orientation: landscape) {
+    .prev,
+    .next {
+        top: 30%;
+    }
+    .lightbox-grid,
+    .numbertext {
+        margin-top: -60px;
+    }
+}
+
+@media screen and (max-height: 500px) and (orientation: landscape) {
+    .modal-content {
+        margin: auto;
+    }
+    .close {
+        top: 0;
+    }
+    .prev,
+    .next {
+        top: 35%;
+    }
+    .numbertext {
+        top: 270px;
+        font-size: 0.6em;
+    }
+    .lightbox-grid,
+    .numbertext {
+        margin-top: -30px;
+    }
+}
+
+@media screen and (max-height: 375px) and (orientation: landscape) {
+    .lightbox-grid div:nth-child(1),
+    .lightbox-grid div:nth-child(2),
+    .lightbox-grid video {
+        height: 250px;
+    }
+    .prev,
+    .next {
+        top: 25%;
+    }
+    .lightbox-grid h3 {
+        padding: 5px 0 5px 47px;
+        font-size: 1.5em;
+    }
+    .lightbox-grid p {
+        margin-left: 47px;
+        font-size: 1em;
+    }
+    .lightbox-grid p:nth-child(2) {
+        margin-left: 47px;
+        font-size: 1.1em;
+    }
+    .numbertext {
+        top: 220px;
+    }
+}
+
+@media screen and (max-height: 320px) and (orientation: landscape) {
+    .lightbox-grid div:nth-child(1),
+    .lightbox-grid div:nth-child(2),
+    .lightbox-grid video {
+        height: 200px;
+    }
+    .prev,
+    .next {
+        top: 25%;
+    }
+    .lightbox-grid br {
+        display: none;
+    }
+    .lightbox-grid h3 {
+        padding: 5px 0 5px 47px;
+        font-size: 1.2em;
+    }
+    .lightbox-grid p {
+        margin-left: 47px;
+        font-size: 0.9em;
+    }
+    .lightbox-grid p:nth-child(2) {
+        margin-left: 47px;
+        font-size: 1em;
+    }
+    .numbertext {
+        top: 170px;
+    }
+    .lightbox-grid,
+    .numbertext {
+        margin-top: -35px;
+    }
+}
+
+/*!Remove hover effects */
+@media screen and (max-width: 900px) {
+    .overlay {
+        display: none;
+    }
+    .scroll-arrow:hover {
+        transform: none;
+    }
+}

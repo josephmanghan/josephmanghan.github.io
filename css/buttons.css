@@ -1,0 +1,131 @@
+/* !BASE BUTTON */
+button {
+    cursor: pointer;
+    display: inline-block;
+    padding: .75rem 1.25rem;
+    border-radius: .25rem;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    font-weight: 300;
+    letter-spacing: .15rem;
+    transition: all .3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    border: none;
+    text-align: center;
+}
+
+button::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(var(--T1));
+    border-radius: .25rem;
+    z-index: -2;
+}
+
+/* Basis for hover animation */
+button::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: rgb(var(--T2));
+    transition: all .3s;
+    border-radius: .25rem;
+    z-index: -1;
+}
+
+    @media (hover: hover) {
+        button:hover {
+            color: #fff;
+        }
+
+        button:hover::before {
+            width: 100%;
+        }
+    }
+
+    button:focus {
+        outline: 0;
+    }
+
+    .button-press:active {
+        top: 2px;
+    }
+
+/** DOWNLOAD BUTTON */
+.download-button {
+    width: 10vw;
+}
+
+    .download-button > span {
+        font-size: 0.6em;
+        text-transform: none;
+        letter-spacing: 0.05rem;
+    }
+
+.download-icon {
+    margin-bottom: -3px;
+    color: #000;
+    transition: color .2s;
+}
+
+    @media (hover: hover) {
+        .download-button:hover .download-icon {
+            color: #fff;
+        }
+    }
+
+/** CONTACT BUTTON */
+.contact button {
+    margin: 3em 0 1.5em 0;
+    border: 1px solid #000;
+    width: 20vw;
+    box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.5),
+        4px 6px 10px rgba(var(--T2));
+}
+
+/** FORM BUTTONS */
+.contact-button-flex {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.submit,
+.cancel {
+    width: 15vw;
+    height: clamp(2.3em, 5vh, 3em);
+    border: 1px solid #000;
+    margin: 2vh 0 1vh 0;
+    font-weight: 300;
+    font-size: 1em;
+}
+
+/* Overrides Bootstrap styling */
+.btn:focus {
+    box-shadow: none;
+}
+
+.cancel::after {
+    background-color: #ff7d7d;
+}
+
+.cancel::before {
+    background-color: #ff0000;
+}
+
+    @media (hover: hover) {
+        .cancel:hover,
+        .submit:hover {
+            color: #fff;
+        }
+    }

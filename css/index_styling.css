@@ -1,0 +1,265 @@
+/*! ABOUT */
+.about {
+    height: 100vh;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-areas:
+        'aboutL aboutR'
+        'aboutL aboutR'
+        'cv cv'
+        'arrow arrow'
+        'arrow arrow'
+        'arrow arrow';
+    justify-items: center;
+    align-items: center;
+    column-gap: 2em;
+    padding: 0 4em;
+    height: 100%;
+}
+
+.about-left {
+    grid-area: aboutL;
+}
+
+.about-right {
+    grid-area: aboutR;
+}
+
+.cv {
+    grid-area: cv;
+    display: flex;
+    margin-bottom: auto;
+    white-space: nowrap;
+}
+
+.scroll-down {
+    /* !removed */
+    /* grid-area: arrow; */
+    display: none;
+}
+
+    ion-icon.continue-arrow {
+        color: white;
+        /* color: red; */
+    }
+
+.personal-pic {
+    width: 15em;
+    height: 15em;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.location-info {
+    display: flex;
+    font-size: 0.9em;
+    font-style: italic;
+    margin-top: 2em;
+}
+
+.location-info img {
+    margin: 0 6px 2px 6px;
+}
+
+.cv div {
+    margin: 0.3em;
+}
+
+.cv img {
+    transition: all .4s;
+}
+
+    @media (hover: hover) {
+        .cv img:hover {
+            margin: 0 5px;
+            transform: scale(1.2);
+        }
+    }
+
+/*! PROJECTS */
+.projects {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.projects h2 {
+    margin-bottom: 20px;
+}
+
+/** Skills */
+.skill-box {
+    width: 75px;
+    height: 75px;
+    margin: 15px 25px 15px 15px;
+}
+
+.skill-box img {
+    object-fit: cover;
+    max-width: 75px;
+    max-height: 75px;
+}
+
+/** Projects tiles */
+.projects-container {
+    align-items: stretch;
+    margin: 20px auto;
+    max-width: 1300px;
+    column-gap: 100px;
+    row-gap: 50px
+}
+
+.project-box {
+    position: relative;
+    width: 400px;
+    height: 250px;
+    margin: 20px 50px 20px 50px;
+    overflow: hidden;
+    box-shadow: 8px 6px 10px rgb(0 0 0 / 50%), 
+        -4px 0px 8px rgb(0 0 0 / 25%);
+    border-radius: 8%;
+}
+
+.project-box img {
+    object-fit: cover;
+    cursor: pointer;
+    position: absolute;
+}
+
+.overlay {
+    position: absolute;
+    cursor: pointer;
+    background-color: rgba(var(--T1), 0.6);
+    width: 100%;
+    height: 100%;
+    border-radius: 8%;
+    overflow: hidden;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 150ms ease-out, 
+        transform 250ms linear;
+}
+
+    /* Below produces hover effect */
+    @media (hover: hover) {
+        .project-box:hover .overlay {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        .eye {
+            width: 100%;
+            height: 100%;
+            color: white;
+            transform: scale(0.2);
+        }
+    }
+
+/*! PhD */
+.phd {
+    padding: 40px 9em 10px 9em;
+}
+
+.phd h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Info AND video/ElectroQuiz formatting */
+.phd-info {
+    margin: 0 5em 3em 5em;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 20px;
+}
+
+.phd-left {
+    grid-column: 1;
+    align-self: center;
+}
+
+.phd-right {
+    grid-column: 2;
+    align-self: center;
+}
+
+/** Slideshow */
+.carousel, .carousel-item img {
+    width: 630px;
+    height: 350px;
+}
+
+.carousel {
+    margin: 0 auto;
+    align-self: center;
+}
+
+.carousel-item img {
+    object-fit: cover;
+}
+
+.carousel ol {
+    z-index: 1;
+}
+
+/** PhD Portfolio */
+.audio-container {
+    margin: 0 7rem 3rem 5rem;
+    display: grid;
+    grid-template-areas:
+        'leftA center rightA'
+        'leftB center rightB';
+    gap: 2em;
+    grid-template-columns: 47% 2% 47%;
+}
+
+.audio-left {
+    grid-area: leftA;
+}
+
+.audio-center-line {
+    grid-area: center;
+    border-left: 1px solid #fff;
+    height: 80%;
+    align-self: center;
+}
+
+.audio-right {
+    grid-area: rightA;
+}
+
+.player-left {
+    grid-area: leftB;
+    text-align: center;
+    align-self: end;
+}
+
+.player-right {
+    grid-area: rightB;
+    text-align: center;
+    align-self: end;
+}
+
+audio {
+    width: 70%;
+    height: 3rem;
+}
+
+.electroquiz-vid {
+    align-self: center;
+}
+
+iframe {
+    border: 0;
+    align-self: center;
+}
+
+/*! CONTACT */
+.email {
+    font-size: 0.9em;
+}
+
+.email div div:nth-child(2) {
+    margin-bottom: 5px;
+}
