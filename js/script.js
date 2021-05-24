@@ -98,3 +98,17 @@ $('.carousel').carousel({
   interval: 3000
 });
 // END PHD SLIDESHOW
+
+//! COPY FUNCTION
+function copy() {
+    var copyText = document.createElement("textarea");
+    document.body.appendChild(copyText);
+    copyText.value = "josephmanghan@gmail.com";
+    copyText.select();
+    copyText.setSelectionRange(0, 99999);
+    document.execCommand("copy");
+    document.body.removeChild(copyText);
+
+    $('#copied-success').fadeIn(800).delay(2000).fadeOut(800);
+}
+// END COPY FUNCTION
