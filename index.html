@@ -48,7 +48,8 @@
             <!-- * Info -->
             <div class="about-right">
                 <h1 class="manghan">Dr Joseph Manghan</h1>
-                <h2><span style="color: red;">Web Developer | Front-End</span></h2>
+                <!-- test github -->
+                <h2><span style="color: blue;">Web Developer | Front-End</span></h2>
                 <br>
 
                 <h3>Music & Web Science PhD graduate from the University of Southampton</h3>
@@ -100,7 +101,8 @@
         <div class="center-text">
             <h2>Projects</h2>
             <p>Click the tiles for more info</p>
-            <p><a class="link-hover" href="">View site code</a></p>
+            <p><a class="link-hover" href="https://github.com/josephmanghan/josephmanghan.github.io" target="_blank">View site code</a>
+            </p>
         </div>
         <div>
             <div class="flex-center flex-wrap skills-container" tabindex="2">
@@ -284,8 +286,14 @@
                 <div>
                     <ion-icon name="mail-outline" size="large"></ion-icon>
                 </div>
-                <div>&nbsp;&nbsp;joemanghan@gmail.com</div>
+                <div onclick="copy()">&nbsp;&nbsp;josephmanghan@gmail.com&nbsp;</div>
+                <div>
+                    <ion-icon name="copy-outline" id="copy-button" onclick="copy()"></ion-icon>
+                </div>
             </div>
+        </div>
+        <div id='copied-success' class="copied">
+            <span>Copied!</span>
         </div>
     </section>
     <!-- END CONTACT -->
@@ -304,13 +312,13 @@
         
         <!-- * Footer icons -->
         <div class="footer-icons flex-center">
-            <div><a href="https://github.com/Joseph-Manghan" target="_blank">
+            <div><a href="https://github.com/josephmanghan" target="_blank">
                 <picture>
                     <source srcset="media/img/contact/github2.webp" type="image/webp">
                     <img src="media/img/contact/github2.png" alt="GitHub" width="50" title="GitHub">
                 </picture>
             </a></div>
-            <div><a href="https://www.linkedin.com/in/joseph-manghan" target="_blank">
+            <div><a href="https://www.linkedin.com/in/josephmanghan" target="_blank">
                 <picture>
                     <source srcset="media/img/contact/linkedin.webp" type="image/webp">
                     <img src="media/img/contact/linkedin.png" alt="LinkedIn" width="50" title="LinkedIn">
@@ -361,7 +369,7 @@
                         <h3>ToDo App</h3>
                         <p>Allows users to add and delete tasks</p>
                         <br>
-                        <p><a href="" class="link-hover" target="_blank">View</a> source code on GitHub</p>
+                        <p>View <a href="projects/ToDo_app/todo.html" class="link-hover" target="_blank">site</a> | <a href="https://github.com/josephmanghan/diploma_projects/tree/main/ToDo_app" class="link-hover" target="_blank">code</a></p>
                     </div>
                     <div>
                         <video preload="none" muted loop controls poster="media/img/portfolio/todo_sample.jpg">
@@ -381,7 +389,7 @@
                         <h3>Calculator</h3>
                         <p>A functioning calculator built with JavaScript</p>
                         <br>
-                        <p><a href="" class="link-hover" target="_blank">View</a> source code on GitHub</p>
+                        <p>View <a href="projects/Calculator/Calculator.html" class="link-hover" target="_blank">site</a> | <a href="https://github.com/josephmanghan/diploma_projects/tree/main/Calculator" class="link-hover" target="_blank">code</a></p>
                     </div>
                     <div>
                         <video preload="none" muted loop controls poster="media/img/portfolio/calculator_sample.jpg">
@@ -401,7 +409,7 @@
                         <h3>Tic-Tac-Toe</h3>
                         <p>Play against the computer in this Tic-Tac-Toe web app</p>
                         <br>
-                        <p><a href="" class="link-hover" target="_blank">View</a> source code on GitHub</p>
+                        <p>View <a href="projects/TicTacToe/TicTacToe.html" class="link-hover" target="_blank">site</a> | <a href="https://github.com/josephmanghan/diploma_projects/tree/main/TicTacToe" class="link-hover" target="_blank">code</a></p>
                     </div>
                     <div>
                         <video preload="none" muted loop controls poster="media/img/portfolio/tictactoe_sample.jpg">
@@ -421,7 +429,7 @@
                         <h3>Cinema Homepage</h3>
                         <p>A prototype homepage, created to develop Bootstrap skills</p>
                         <br>
-                        <p><a href="" class="link-hover" target="_blank">View</a> source code on GitHub</p>
+                        <p>View <a href="projects/Cinema_homepage/prototype_cinemas.html" class="link-hover" target="_blank">site</a> | <a href="https://github.com/josephmanghan/diploma_projects/tree/main/Cinema_homepage" class="link-hover" target="_blank">code</a></p>
                     </div>
                     <div>
                         <video preload="none" muted loop controls poster="media/img/portfolio/cinema_sample.jpg">
@@ -460,9 +468,7 @@
     <!-- END PROJECTS LIGHTBOX -->
 
     <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Bootsrap -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
