@@ -1,0 +1,62 @@
+/* CONTAINER STYLING */
+body {
+    width: 100%;
+}
+
+#flex-box {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-container {
+    width: 608px;
+}
+
+/* GAME BOARD STYLING */
+table {
+    border-collapse: collapse;
+    border-style: hidden;
+}
+
+td {
+    cursor: pointer;
+    border: 8px solid rgba(1, 194, 162, 0.8);
+    padding: 0px;
+    width: 200px;
+    height: 200px;
+}
+
+canvas {
+    position: absolute;
+    z-index: 10;
+    pointer-events: none;
+}
+
+/* RESPONSIVE STYLING */
+#small-screen-text {
+    display: none;
+}
+
+@media screen and (max-width: 650px) {
+    #flex-box {
+        display: none;
+    }
+    #small-screen-text {
+        display: flex;
+        width: 95vw;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;  
+        font-family: Verdana, sans-serif;
+        font-size: 2em;
+        text-align: center;
+        line-height: 10vh;
+    }
+    .red-text {
+        font-size: 1.4em;
+        color: red;
+        font-weight: bold;
+    }
+}

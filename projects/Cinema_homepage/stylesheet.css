@@ -1,0 +1,56 @@
+/* GENERAL STYLING */
+.card-img-top {
+     height: 10rem;
+     object-fit: cover;
+     margin-top: 10px;
+}
+
+#now-playing {
+    font-size: 1.3rem;
+}
+
+.modal-spacing {
+    margin-bottom: 10px;
+}
+
+/* RESPONSIVE STYLING */
+.col {
+    min-width: 200px;
+}
+
+@media screen and (max-width: 450px) {
+    #responsive-header-container {
+        height: 100vh;
+    }
+    #header-jumbotron {
+        height: 30vh;
+    }
+    #header-jumbotron h1 {
+        font-size: 2.5rem;
+    }
+    .delete-content {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    #header-jumbotron {
+        height: 20vh;
+        padding-top: 0;
+    }
+    #header-jumbotron h1 {
+        font-size: 2rem;
+    }
+    #header-jumbotron p {
+        font-size: 1.3rem;
+    }
+    #about {
+        line-height: 25px;
+    }
+    #about h3 {
+        font-size: 1.3rem;
+    }
+    #about p {
+        font-size: 0.9rem;
+    }
+}

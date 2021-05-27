@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="JavaScript/Calculator_JavaScript.js" defer></script>
+    <link rel="stylesheet" href="CSS/Calculator_CSS.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=VT323&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- CALCULATOR CONTAINER -->
+    <div class="calculator">
+        <input type="text" class="calculator-screen" value="0" disabled>
+
+        <!-- CALCULATOR KEYS -->
+        <div class="calculator-keys">
+
+            <!-- OPERATORS -->
+            <button type="button" class="operator" value="+" onmousedown="scaleDown(0)" onmouseup="scaleUp(0)">+</button>
+            <button type="button" class="operator" value="-" onmousedown="scaleDown(1)"
+            onmouseup="scaleUp(1)">-</button>
+            <button type="button" class="operator" value="*" onmousedown="scaleDown(2)"
+            onmouseup="scaleUp(2)">&times;</button>
+            <button type="button" class="operator" value="/" onmousedown="scaleDown(3)"
+            onmouseup="scaleUp(3)">&divide;</button>
+
+            <!-- NUMBERS -->
+            <button type="button" value="7" onmousedown="scaleDown(4)" onmouseup="scaleUp(4)">7</button>
+            <button type="button" value="8" onmousedown="scaleDown(5)" onmouseup="scaleUp(5)">8</button>
+            <button type="button" value="9" onmousedown="scaleDown(6)" onmouseup="scaleUp(6)">9</button>
+
+            <button type="button" value="4" onmousedown="scaleDown(7)" onmouseup="scaleUp(7)">4</button>
+            <button type="button" value="5" onmousedown="scaleDown(8)" onmouseup="scaleUp(8)">5</button>
+            <button type="button" value="6" onmousedown="scaleDown(9)" onmouseup="scaleUp(9)">6</button>
+
+            <button type="button" value="1" onmousedown="scaleDown(10)" onmouseup="scaleUp(10)">1</button>
+            <button type="button" value="2" onmousedown="scaleDown(11)" onmouseup="scaleUp(11)">2</button>
+            <button type="button" value="3" onmousedown="scaleDown(12)" onmouseup="scaleUp(12)">3</button>
+
+            <button type="button" value="0" onmousedown="scaleDown(13)" onmouseup="scaleUp(13)">0</button>
+
+            <!-- FUNCTIONS -->
+            <button type="button" class="decimal function" value="." onmousedown="scaleDown(14)"
+            onmouseup="scaleUp(14)">.</button>
+            <button type="button" class="all-clear function" value="all-clear" onmousedown="scaleDown(15)"
+            onmouseup="scaleUp(15)">AC</button>
+            <button type="button" class="equal-sign operator" value="=" onmousedown="scaleDown(16)"
+            onmouseup="scaleUp(16)">=</button>
+
+        </div>
+    </div>
+</body>
+
+</html>

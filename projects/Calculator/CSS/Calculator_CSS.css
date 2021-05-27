@@ -1,0 +1,135 @@
+/* GENERAL STYLING */
+
+html {
+    font-size: 70%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    font-family: 'Didact Gothic', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+/* CALCULATOR CONTAINER STYLING */
+
+.calculator {
+    border: 1.2px solid rgb(54, 54, 54);
+    background-color: rgb(231, 231, 231);
+    border-radius: 7px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    box-shadow: 1px 1px 0px rgb(92, 92, 92),
+        2px 2px 0px rgb(92, 92, 92),
+        3px 3px 0px rgb(92, 92, 92),
+        4px 4px 0px rgb(92, 92, 92),
+        5px 5px 0px rgb(92, 92, 92),
+        6px 6px 0px rgb(92, 92, 92),
+        7px 7px 0px rgb(92, 92, 92),
+        8px 8px 0px rgb(92, 92, 92),
+        9px 9px 0px rgb(92, 92, 92),
+        10px 10px 0px rgb(92, 92, 92);
+    }
+
+.calculator-keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.calculator-screen {
+    width: 100%;
+    font-family: 'VT323', monospace;
+    font-size: 7rem;
+    letter-spacing: 0.5rem;
+    height: 80px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    text-align: right;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 7px 7px 0px 0px;
+}
+
+/* BUTTON STYLING */
+
+button {
+    height: 70px;
+    border-radius: 3px;
+    border: 1px solid darkslategray;
+    background-color: white;
+    font-size: 3.2rem;
+    color: #000;
+    background-image: linear-gradient(to bottom, transparent, transparent 50%, rgba(0,0,0,.06));
+    text-shadow: 0 1px rgba(255,255,255,.4);
+    box-shadow: inset 0 0 0 1px rgba(255,255,255,.05), inset 0 1px 0 0 rgba(255,255,255,.05), inset 0 -1px 0 0 rgba(255,255,255,.05), 0 1px 0 0 rgba(255,255,255,.05);
+}
+
+button:hover {
+    background-color: #c4c4c4;
+}
+
+button:focus {
+    outline: none;
+}
+
+.operator {
+    color: #000;
+    font-size: 4rem;
+    background-image: linear-gradient(to bottom, transparent, transparent 50%, rgba(0,0,0,.5));
+    background-color: lightgray;
+}
+
+.operator:hover {
+    background-color: #292929;
+    color: #fff;
+}
+
+.all-clear {
+    background-color: red;
+    border-color: darkslategray;
+    color: #fff;
+}
+
+.all-clear:hover {
+    background-color: darkred;
+}
+
+.equal-sign {
+    background-color: blue;
+    border-color: darkslategray;
+    color: #fff;
+    font-size: 6rem;
+    height: 100%;
+    grid-area: 2 / 4 / 6 / 5;
+}
+
+.equal-sign:hover {
+    background-color: darkblue;
+}
+
+/* RESPONSIVE STYLING */
+
+@media screen and (max-width: 600px) {
+    html {
+        font-size: 0.6rem;
+    }
+
+    .calculator {
+        width: 280px;
+    }
+
+    .calculator-screen {
+        height: 60px;
+    }
+
+    button {
+        height: 60px;
+    }
+}
