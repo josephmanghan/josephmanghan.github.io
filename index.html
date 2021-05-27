@@ -8,7 +8,8 @@
     <link rel="shortcut icon" href="media/img/favicon.ico" type="image/x-icon">
     <title>Dr Joseph Manghan</title>
     <meta name="author" content="Joseph Manghan">
-    <meta name="keywords" content="joseph manghan, joe manghan, web-developer, front-end developer">
+    <meta name="keywords"
+    content="joseph manghan, joseph, manghan, joe manghan, web, developer, web-developer, web developer, front-end, front, end, front end, front-end developer">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- Font -->
@@ -48,7 +49,6 @@
             <!-- * Info -->
             <div class="about-right">
                 <h1 class="manghan">Dr Joseph Manghan</h1>
-                <!-- test github -->
                 <h2>Web Developer | Front-End</h2>
                 <br>
 
@@ -72,25 +72,20 @@
             <!-- * CV -->
             <div class="cv flex-center">
                 <div>
-                    <button class="download-button button-press">
-                        <ion-icon class="download-icon" name="download-outline"></ion-icon> CV<span>.pdf</span>
-                    </button>
+                    <a href="media/MANGHAN_CV.pdf" target="_blank">
+                        <button class="download-button button-press">
+                            <ion-icon class="download-icon" name="download-outline"></ion-icon> CV<span>.pdf</span>
+                        </button>
+                    </a>
                 </div>
                 <div>
-                    <a href="" download>
+                    <a href="media/MANGHAN_CV.pdf" target="_blank">
                         <picture>
                             <source srcset="media/img/cv.webp" type="image/webp">
                             <img src="media/img/cv.png" alt="CV" width="35" title="CV Download">
                         </picture>
                     </a>
                 </div>
-            </div>
-            <!-- * Arrow -->
-            <!-- !removed -->
-            <div class="scroll-down scroll-arrow flex-center">
-                <a href="#projects">
-                    <ion-icon class="continue-arrow" name="chevron-down-outline" size="large"></ion-icon>
-                </a>
             </div>
         </div>
     </section>
@@ -283,12 +278,9 @@
         <button onclick="openForm()">CONTACT</button>
         <div class="email">
             <div class="flex-center">
+                <div onclick="copy()">&nbsp;&nbsp;josephmanghan@gmail.com</div>
                 <div>
-                    <ion-icon name="mail-outline" size="large"></ion-icon>
-                </div>
-                <div onclick="copy()">&nbsp;&nbsp;josephmanghan@gmail.com&nbsp;</div>
-                <div>
-                    <ion-icon name="copy-outline" id="copy-button" onclick="copy()"></ion-icon>
+                    <ion-icon name="clipboard-outline" id="copy-button" size="large" onclick="copy()"></ion-icon>
                 </div>
             </div>
         </div>
@@ -324,7 +316,7 @@
                     <img src="media/img/contact/linkedin.png" alt="LinkedIn" width="50" title="LinkedIn">
                 </picture>
             </a></div>
-            <div><a href="" download>
+            <div><a href="media/MANGHAN_CV.pdf" target="_blank">
                 <picture>
                     <source srcset="media/img/cv2.webp" type="image/webp">
                     <img src="media/img/cv2.png" alt="CV" width="40" title="CV Download">
