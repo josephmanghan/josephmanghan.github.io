@@ -246,6 +246,7 @@ iframe {
 
 /*! CONTACT */
 .email {
+    margin-top: 30px;
     font-size: 1.1em;
     cursor: pointer;
 }
