@@ -1,36 +1,3 @@
-//! CONTACT FORM
-//* Form functions
-const contactModal = document.getElementById("contact-form");
-const formModal = document.getElementById("myForm");
-
-// Open
-function openForm() {
-    contactModal.style.display = "block";
-    formModal.style.display = "block";
-}
-
-// Close
-function closeForm() {
-    contactModal.style.display = "none";
-    formModal.style.display = "none";
-}
-
-window.addEventListener("keyup", function(event) {
-    if (event.keyCode === 27) {
-        event.preventDefault();
-        contactModal.style.display = "none";
-        formModal.style.display = "none";
-    }
-});
-
-formModal.addEventListener("keyup", function(event) {
-    if (event.keyCode === 13) {
-        event.preventDefault();
-        document.getElementById('submit').click();
-    }
-});
-// END CONTACT FORM
-
 //! PROJECTS MODAL
 //* Form functions
 const projectsModal = document.getElementById("projects-modal");
@@ -49,11 +16,6 @@ window.onclick = function(event) {
   if (event.target == projectsModal) {
     projectsModal.style.display = "none";
   }
-        //! Closes CONTACT modal
-    else if (event.target == contactModal) {
-        contactModal.style.display = "none";
-        formModal.style.display = "none";
-    }
 }
 
 window.addEventListener("keyup", function(event) {
